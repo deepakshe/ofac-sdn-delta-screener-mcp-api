@@ -9,26 +9,6 @@
     "url": "https://github.com/deepakshe/ofac-sdn-delta-screener-mcp-api",
     "source": "github"
   },
-  "packages": [
-    {
-      "registryType": "npm",
-      "registryBaseUrl": "https://registry.npmjs.org",
-      "identifier": "@apify/actors-mcp-server",
-      "version": "0.23.0",
-      "runtimeHint": "npx",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [
-        {
-          "name": "APIFY_TOKEN",
-          "description": "Your Apify API Token ($5 free monthly allowance included)",
-          "isRequired": true,
-          "isSecret": true
-        }
-      ]
-    }
-  ],
   "remotes": [
     {
       "type": "streamable-http",
