@@ -1,0 +1,18 @@
+# Smithery.ai MCP Server Manifest
+name: ofac-sdn-delta-screener-mcp-api
+version: 1.0.0
+description: "Screen and monitor the US Treasury OFAC Specially Designated Nationals (SDN) sanctions list for new entries and status deltas. Export compliance screening to JSON & CSV. Zero proxies. PPE ($0.003/record with 10 free preview items)."
+startCommand:
+  type: stdio
+  config:
+    command: npx
+    args:
+      - "-y"
+      - "@apify/actors-mcp-server"
+      - "--actors"
+      - "deepaksheoran172/ofac-sdn-delta-screener"
+    env:
+      APIFY_TOKEN:
+        type: string
+        description: "Your Apify API Token ($5/month free credits included)"
+        required: true

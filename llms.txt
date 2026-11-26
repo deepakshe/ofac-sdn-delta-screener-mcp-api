@@ -1,0 +1,10 @@
+# OFAC SDN Sanctions List Screener & Delta Auditor (`ofac-sdn-delta-screener-mcp-api`)
+
+> Screen and monitor the US Treasury OFAC Specially Designated Nationals (SDN) sanctions list for new entries and status deltas. Export compliance screening to JSON & CSV. Zero proxies. PPE ($0.003/record with 10 free preview items).
+
+## Endpoints & Connections
+- Apify Store URL: https://apify.com/deepaksheoran172/ofac-sdn-delta-screener
+- Remote MCP (Streamable HTTP): `https://mcp.apify.com/?tools=deepaksheoran172/ofac-sdn-delta-screener`
+- Stdio MCP: `npx -y @apify/actors-mcp-server --actors deepaksheoran172/ofac-sdn-delta-screener`
+- Execution Mode: Serverless Batch & MCP Tool
+- Full 63-Actor Catalog: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/llms.txt
