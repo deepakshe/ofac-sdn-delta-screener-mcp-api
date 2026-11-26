@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.deepakshe/ofac-sdn-delta-screener-mcp-api",
   "title": "OFAC SDN Sanctions List Screener & Delta Auditor MCP Server",
-  "description": "Screen and monitor the US Treasury OFAC Specially Designated Nationals (SDN) sanctions list for new entries and status deltas. Export compliance screening to JSON & CSV. Zero proxies. PPE ($0.003/reco",
+  "description": "Screen US Treasury OFAC SDN sanctions lists and status deltas into JSON & CSV.",
   "version": "1.0.0",
   "websiteUrl": "https://apify.com/deepaksheoran172/ofac-sdn-delta-screener",
   "repository": {
@@ -14,7 +14,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@apify/actors-mcp-server",
-      "version": "latest",
+      "version": "0.23.0",
       "runtimeHint": "npx",
       "transport": {
         "type": "stdio"
@@ -31,10 +31,8 @@
   ],
   "remotes": [
     {
-      "transport": {
-        "type": "streamable-http",
-        "url": "https://mcp.apify.com/?tools=deepaksheoran172/ofac-sdn-delta-screener"
-      }
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=deepaksheoran172/ofac-sdn-delta-screener"
     }
   ]
 }
